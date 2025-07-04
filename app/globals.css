@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 9% 98%; /* #F5F5F4 */
+    --foreground: 120 3% 31%; /* #4D4F4E */
+    --card: 60 9% 98%; /* #F5F5F4 */
+    --card-foreground: 120 3% 31%; /* #4D4F4E */
+    --popover: 60 9% 98%; /* #F5F5F4 */
+    --popover-foreground: 120 3% 31%; /* #4D4F4E */
+    --primary: 184 15% 54%; /* #7D9597 */
+    --primary-foreground: 60 9% 98%; /* #F5F5F4 */
+    --secondary: 207 15% 49%; /* #678291 */
+    --secondary-foreground: 60 9% 98%; /* #F5F5F4 */
+    --muted: 207 15% 49%; /* #678291 */
+    --muted-foreground: 120 3% 31%; /* #4D4F4E */
+    --accent: 32 15% 56%; /* #A08E7A */
+    --accent-foreground: 60 9% 98%; /* #F5F5F4 */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9% 98%; /* #F5F5F4 */
+    --border: 32 15% 56%; /* #A08E7A */
+    --input: 32 15% 56%; /* #A08E7A */
+    --ring: 184 15% 54%; /* #7D9597 */
+    --radius: 0.5rem;
+    --font-serif: "Playfair Display", serif;
+    --font-sans: "Inter", sans-serif;
+  }
+
+  .dark {
+    --background: 120 3% 31%; /* #4D4F4E */
+    --foreground: 60 9% 98%; /* #F5F5F4 */
+    --card: 120 3% 31%; /* #4D4F4E */
+    --card-foreground: 60 9% 98%; /* #F5F5F4 */
+    --popover: 120 3% 31%; /* #4D4F4E */
+    --popover-foreground: 60 9% 98%; /* #F5F5F4 */
+    --primary: #7d9597;
+    --primary-foreground: 120 3% 31%; /* #4D4F4E */
+    --secondary: 207 15% 49%; /* #678291 */
+    --secondary-foreground: 60 9% 98%; /* #F5F5F4 */
+    --muted: 207 15% 49%; /* #678291 */
+    --muted-foreground: 60 9% 98%; /* #F5F5F4 */
+    --accent: 32 15% 56%; /* #A08E7A */
+    --accent-foreground: 60 9% 98%; /* #F5F5F4 */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 9% 98%; /* #F5F5F4 */
+    --border: 32 15% 56%; /* #A08E7A */
+    --input: 32 15% 56%; /* #A08E7A */
+    --ring: 184 15% 54%; /* #7D9597 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+}
